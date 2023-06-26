@@ -1,0 +1,1 @@
+These images are generated in blender of yellow 1 in diameter pole placed z cm away from the midpoint of two cameras spaced 18 cm apart along the x-axis facing directly out along the +z axis (facing the pole).   So x-axis is the line between cameras, y axis is up, z axis is into the image (distance away). The images filenames are left_{x}_{z}.png where x and z are in cm.  
