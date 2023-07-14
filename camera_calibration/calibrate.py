@@ -19,11 +19,11 @@ objp[0,:,:2] = np.mgrid[0:CHECKERBOARD[0], 0:CHECKERBOARD[1]].T.reshape(-1, 2)
 prev_img_shape = None
  
 # Extracting path of individual image stored in a given directory
-images = glob.glob('./images/*.png')
+images = glob.glob('./left/*.png')
 for fname in images:
     img = cv2.imread(fname)
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-    # Find the chess board corners
+    # Find the chess board cornerscon
     # If desired number of corners are found in the image then ret = true
     ret, corners = cv2.findChessboardCorners(gray, CHECKERBOARD, cv2.CALIB_CB_ADAPTIVE_THRESH + cv2.CALIB_CB_FAST_CHECK + cv2.CALIB_CB_NORMALIZE_IMAGE)
      
