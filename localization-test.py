@@ -16,9 +16,9 @@ fx = 1013.8 # mtx[0,0]
 cx = 956.5  # mtx[0,2]
 
 # Load images
-source_directory = "./synthetic-images/"
-left_image = cv2.imread(source_directory + "depth50cm_y0cm-left.png")
-right_image = cv2.imread(source_directory + "depth50cm_y0cm-right.png")
+source_directory = "/Users/caryden/github/SimpleFTCVision/synthetic-images/"
+left_image = cv2.imread(source_directory + "depth45cm_y-20cm-left.png")
+right_image = cv2.imread(source_directory + "depth45cm_y-20cm-right.png")
 image_height, image_width, _ = left_image.shape
 
 # scale down the images to 320 x 240
